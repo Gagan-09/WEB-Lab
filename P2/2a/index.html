@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student-Feedback</title>
+    <style type="text/css">
+        body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 97%;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+select {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+input[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    border: none;   
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <h1>Student-Feedback form</h1>
+    <form>
+        <label for="fname">Full Name:</label>
+        <input type="text"   placeholder="Your name">
+        <label for="email">E-mail:</label>
+        <input type="email"   placeholder="Your E-mail id">
+        <label for="usn">USN:</label>
+        <input type="text"   placeholder="Your USN">
+        <label for="sem">Select Semester:</label>
+        <select name="sem">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <label>Branch:</label>
+        <input type="radio" name="branch" >Computer Science and Engineering<br>
+        <input type="radio" name="branch" >Information Science<br>
+        <input type="radio" name="branch" >Electronics and Communication<br>
+        <input type="radio" name="branch" >Non-Circuit Branch<br>
+        <label for="feedback">Feedback:</label>
+        <textarea rows="6" cols="50" name="feedback" placeholder="Your Feedback & Suggestions"></textarea>
+        <label for="req">Send me a copy of this Feedback</label><br>
+        <input type="checkbox" name="req" id="req"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
